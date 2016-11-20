@@ -161,6 +161,7 @@
             this.about_link.TabIndex = 7;
             this.about_link.TabStop = true;
             this.about_link.Text = "Homepage";
+            this.about_link.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.about_link_LinkClicked);
             // 
             // MainForm
             // 

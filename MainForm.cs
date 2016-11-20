@@ -203,5 +203,9 @@ namespace SpentTime {
             tasks.Add(history_menu_task_combo.Text);
             refill_tasks();
         }
+
+        private void about_link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
+            System.Diagnostics.Process.Start("https://github.com/molhanec/SpentTime");
+        }
     }
 }
