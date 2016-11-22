@@ -82,8 +82,14 @@ namespace SpentTime {
         }
 
         private void timer_Tick(object sender, EventArgs e) {
-            if (current != null)
+            if (current == null) {
+                time_label.Text = "Stopped";
+                return;
+            }
+            if (running_time_checkbox.Checked)
                 time_label.Text = (DateTime.Now - current.Start).ToString();
+            else
+                time_label.Text = "Running";
         }
 
 

@@ -38,6 +38,7 @@
             this.overview_listbox = new System.Windows.Forms.ListBox();
             this.current_task = new System.Windows.Forms.ComboBox();
             this.about_link = new System.Windows.Forms.LinkLabel();
+            this.running_time_checkbox = new System.Windows.Forms.CheckBox();
             this.history_menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +49,7 @@
             this.next_button.Name = "next_button";
             this.next_button.Size = new System.Drawing.Size(75, 23);
             this.next_button.TabIndex = 0;
-            this.next_button.Text = "Next";
+            this.next_button.Text = "&Next";
             this.next_button.UseVisualStyleBackColor = true;
             this.next_button.Click += new System.EventHandler(this.next_button_Click);
             // 
@@ -75,7 +76,7 @@
             this.stop_button.Name = "stop_button";
             this.stop_button.Size = new System.Drawing.Size(75, 23);
             this.stop_button.TabIndex = 3;
-            this.stop_button.Text = "Stop";
+            this.stop_button.Text = "&Stop";
             this.stop_button.UseVisualStyleBackColor = true;
             this.stop_button.Click += new System.EventHandler(this.stop_button_Click);
             // 
@@ -163,11 +164,23 @@
             this.about_link.Text = "Homepage";
             this.about_link.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.about_link_LinkClicked);
             // 
+            // running_time_checkbox
+            // 
+            this.running_time_checkbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.running_time_checkbox.AutoSize = true;
+            this.running_time_checkbox.Location = new System.Drawing.Point(643, 351);
+            this.running_time_checkbox.Name = "running_time_checkbox";
+            this.running_time_checkbox.Size = new System.Drawing.Size(113, 17);
+            this.running_time_checkbox.TabIndex = 8;
+            this.running_time_checkbox.Text = "Show &running time";
+            this.running_time_checkbox.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(793, 448);
+            this.Controls.Add(this.running_time_checkbox);
             this.Controls.Add(this.about_link);
             this.Controls.Add(this.current_task);
             this.Controls.Add(this.overview_listbox);
@@ -201,6 +214,7 @@
         private System.Windows.Forms.ContextMenuStrip history_menu;
         private System.Windows.Forms.ToolStripComboBox history_menu_task_combo;
         private System.Windows.Forms.LinkLabel about_link;
+        private System.Windows.Forms.CheckBox running_time_checkbox;
     }
 }
 
