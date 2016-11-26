@@ -213,5 +213,9 @@ namespace SpentTime {
         private void about_link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
             System.Diagnostics.Process.Start("https://github.com/molhanec/SpentTime");
         }
+
+        private void splitToolStripMenuItem_Click(object sender, EventArgs e) {
+            
+        }
     }
 }

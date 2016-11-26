@@ -39,6 +39,7 @@
             this.current_task = new System.Windows.Forms.ComboBox();
             this.about_link = new System.Windows.Forms.LinkLabel();
             this.running_time_checkbox = new System.Windows.Forms.CheckBox();
+            this.splitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.history_menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -122,13 +123,15 @@
             // history_menu
             // 
             this.history_menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.history_menu_task_combo});
+            this.history_menu_task_combo,
+            this.splitToolStripMenuItem});
             this.history_menu.Name = "history_menu";
-            this.history_menu.Size = new System.Drawing.Size(182, 31);
+            this.history_menu.Size = new System.Drawing.Size(182, 75);
             this.history_menu.Opening += new System.ComponentModel.CancelEventHandler(this.history_menu_Opening);
             // 
             // history_menu_task_combo
             // 
+            this.history_menu_task_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.history_menu_task_combo.Name = "history_menu_task_combo";
             this.history_menu_task_combo.Size = new System.Drawing.Size(121, 23);
             this.history_menu_task_combo.SelectedIndexChanged += new System.EventHandler(this.history_menu_task_combo_SelectedIndexChanged);
@@ -155,6 +158,7 @@
             // 
             // about_link
             // 
+            this.about_link.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.about_link.AutoSize = true;
             this.about_link.Location = new System.Drawing.Point(671, 397);
             this.about_link.Name = "about_link";
@@ -174,6 +178,13 @@
             this.running_time_checkbox.TabIndex = 8;
             this.running_time_checkbox.Text = "Show &running time";
             this.running_time_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // splitToolStripMenuItem
+            // 
+            this.splitToolStripMenuItem.Name = "splitToolStripMenuItem";
+            this.splitToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.splitToolStripMenuItem.Text = "&Split";
+            this.splitToolStripMenuItem.Click += new System.EventHandler(this.splitToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -215,6 +226,7 @@
         private System.Windows.Forms.ToolStripComboBox history_menu_task_combo;
         private System.Windows.Forms.LinkLabel about_link;
         private System.Windows.Forms.CheckBox running_time_checkbox;
+        private System.Windows.Forms.ToolStripMenuItem splitToolStripMenuItem;
     }
 }
 
