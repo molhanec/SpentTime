@@ -35,11 +35,11 @@
             this.spent_time_column = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.history_menu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.history_menu_task_combo = new System.Windows.Forms.ToolStripComboBox();
+            this.splitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.overview_listbox = new System.Windows.Forms.ListBox();
             this.current_task = new System.Windows.Forms.ComboBox();
             this.about_link = new System.Windows.Forms.LinkLabel();
             this.running_time_checkbox = new System.Windows.Forms.CheckBox();
-            this.splitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.history_menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -126,7 +126,7 @@
             this.history_menu_task_combo,
             this.splitToolStripMenuItem});
             this.history_menu.Name = "history_menu";
-            this.history_menu.Size = new System.Drawing.Size(182, 75);
+            this.history_menu.Size = new System.Drawing.Size(182, 53);
             this.history_menu.Opening += new System.ComponentModel.CancelEventHandler(this.history_menu_Opening);
             // 
             // history_menu_task_combo
@@ -136,6 +136,13 @@
             this.history_menu_task_combo.Size = new System.Drawing.Size(121, 23);
             this.history_menu_task_combo.SelectedIndexChanged += new System.EventHandler(this.history_menu_task_combo_SelectedIndexChanged);
             this.history_menu_task_combo.TextUpdate += new System.EventHandler(this.history_menu_task_combo_TextUpdate);
+            // 
+            // splitToolStripMenuItem
+            // 
+            this.splitToolStripMenuItem.Name = "splitToolStripMenuItem";
+            this.splitToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.splitToolStripMenuItem.Text = "&Split";
+            this.splitToolStripMenuItem.Click += new System.EventHandler(this.splitToolStripMenuItem_Click);
             // 
             // overview_listbox
             // 
@@ -150,6 +157,7 @@
             // current_task
             // 
             this.current_task.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.current_task.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.current_task.FormattingEnabled = true;
             this.current_task.Location = new System.Drawing.Point(617, 301);
             this.current_task.Name = "current_task";
@@ -178,13 +186,6 @@
             this.running_time_checkbox.TabIndex = 8;
             this.running_time_checkbox.Text = "Show &running time";
             this.running_time_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // splitToolStripMenuItem
-            // 
-            this.splitToolStripMenuItem.Name = "splitToolStripMenuItem";
-            this.splitToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.splitToolStripMenuItem.Text = "&Split";
-            this.splitToolStripMenuItem.Click += new System.EventHandler(this.splitToolStripMenuItem_Click);
             // 
             // MainForm
             // 
